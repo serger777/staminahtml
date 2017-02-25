@@ -1,0 +1,170 @@
+/* --------- adjustment --------- */
+
+//$container-width    : 1255px;
+
+$footer-height      : 220px;
+$body-font: 'Neucha', cursive;
+//$body-font          : 'PT Sans', sans-serif;
+
+
+$orange             :#ff6600;
+$red                :#e30513;
+$black              : #000000;
+
+body {
+	font: 18px/1.2 $body-font;
+    -webkit-font-smoothing: antialiased;
+	height:100%;
+  margin: 0;
+  p{
+
+  }
+  @media all and (max-width: 600px){
+    font-size: 15px;
+  }
+
+}
+h1,h2,h3,h4,h5{
+
+}
+
+
+
+.wrapper {
+
+    overflow: hidden;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    &:after {
+	    display: block;
+        position: relative;
+        height: $footer-height;
+    }
+}
+.footer {
+  position: relative;
+  height: $footer-height ;
+}
+.pull-right{
+    float: right;
+}
+.pull-left{
+    float: left;
+}
+.header_text{
+  margin: 80px 0;
+  font-size: 40px;
+}
+input{
+  outline: none!important;
+  border: none!important;
+}
+.phone_form{
+  cursor:pointer;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+	list-style: none outside none;
+
+	li {
+        padding: 0;
+        left: 0;
+    }
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/**********************************TOOLTIP**************************************/
+.qtip.qtip-default.myclass{
+  background-color: #ff1022;
+  border-color: #ff1022;
+  border-radius: 4px;
+  color: white;
+
+
+}
+.qtip .qtip-tip canvas{
+  width: 10px;
+  height: 16px;
+  background-color: #ff1022!important;
+  color:#ff1022!important;
+}
+//.add-error{
+//  background: #fdd5d2;
+//  border:1px solid #f97e76!important;
+//}
+.button{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 7px 0 #660b12, 0 8px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 7px 0 #660b12, 0 8px 3px rgba(0, 0, 0, 0.3);
+  background-color: #E30517;
+  border-color: #ff4351;
+  color: white;
+  font-weight: 300;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  top: 0;
+  padding: 5px 40px;
+  margin: 0;
+  display: inline-block;
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.55);
+  font-weight: bold;
+  color:white!important;
+  &:active{
+    -webkit-box-shadow: 0 2px 0 #dc0010, 0 3px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 0 #dc0010, 0 3px 3px rgba(0, 0, 0, 0.2);
+    background-color: #d8444f;
+    border-color: #f64c59;
+    color: #ff1022;
+    top: 5px;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .15s;
+    transition-duration: .15s;
+  }
+}
+.button-caution {
+  border-color: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  padding: 2px 5px;
+  color:white;
+  text-decoration: none;
+  text-transform: lowercase;
+  margin: 5px 0px;
+  display: inline-block;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.33);
+  font-weight: bold;
+  color:white;
+  &:hover{
+
+  background: #f64c59;
+    border-color: #ff2939;
+    background: -webkit-gradient(linear, left top, left bottom, from(#dc0010), to(#ff2939));
+    background: linear-gradient(#dc0010, #ff2939);
+    border-color: #ff2939;
+}
+}

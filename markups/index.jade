@@ -1,0 +1,343 @@
+doctype html
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+html
+    head
+        meta(http-equiv = 'Content-Type', content = 'text/html; charset=utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1" )
+        link(href='https://fonts.googleapis.com/css?family=Neucha|PT+Sans' rel='stylesheet' type='text/css')
+        //build:css css/vendor.css
+        link(rel="stylesheet", href="bower/normalize-css/normalize.css")
+        link(rel="stylesheet" type='text/css' href="bower/qtip2/jquery.qtip.css")
+        //endbuild
+        //build:css css/main.css
+        link(rel="stylesheet" type='text/css' href="/css/main.css")
+        //endbuild
+        //build:js js/modernizr.js
+        script(src="bower/modernizr/modernizr.js")
+        //endbuild
+    body
+        .wrapper
+                .header_img
+                .header_top
+                        .phone_block
+
+                            a.phone_link(href="tel:+7 (4942) 31-11-59")
+                                i(class="fa fa-phone" aria-hidden="true")
+                                |&nbsp;7 (4942) 31-11-59
+                            a.phone_link(href="tel:+7 (903) 896-29-89")
+                                i(class="fa fa-mobile" aria-hidden="true")
+                                |&nbsp;7 (903) 896-29-89
+
+                        .menu_top_block
+                            a(href="./1.html").menu_link
+                                i(class="fa fa-map-signs" aria-hidden="true")
+                                |&nbsp;Кострома
+                            a(href="#").menu_link
+                                i(class="fa fa-map-signs" aria-hidden="true")
+                                |&nbsp;Казань
+                .header
+
+
+                        .logo_block
+                                a(href="#" class="logo"): img(src="images/logo_st.png" alt="Stamina.su")
+
+                        .menu_block
+                             a(href="#").menu_link Блог
+                             a(href="#about").menu_link О нас
+                             a(href="#contact").menu_link Контакты
+                label( class="form_popup_header")
+                            form( action="action.php" method="post" enctype="multipart/form-data" role="form" class="form_3")
+                                .form__header_text Запишись на тренировку
+                                p Первое занятие бесплатное
+                                #serv-msg3( class="server-mes  error")
+                                input( name="name" type="text" rows="350px" placeholder="Ваше имя" qtip-position="top" qtip-content="Введите имя" class="form__input")
+                                input( name="email" type="text" rows="350px" placeholder="Ваш телефон" qtip-position="top" qtip-content="Введите телефон" class="form__input")
+                                input( name="message" type="text" rows="350px" placeholder="Ваш город" qtip-position="top" qtip-content="Введите город?" class="form__input")
+                                input( type="submit" value="Отправить" class="form__submit button")
+                .block_slider
+                    div(class="single-item slick-slider")
+
+                        div.slick-slide
+                            img(src="/images/run6.jpg")
+                            .block_text
+                                h2 Школа выносливости в Костроме
+                                p  От 400 метров до марафона
+                                p  Любые цели достижимы с профессиональными
+                                p тренерами школы
+                                a.link_page.button-caution(href="" id="") Подробнее
+
+                        div.slick-slide
+                           img(src="/images/run8.jpg")
+                           .block_text
+                                h2 Школа выносливости в Казани
+                                p  Построение тренировочных планов
+                                p  на основании функциональной диагностики
+                                a.link_page.button-caution(href="" id="") Подробнее
+
+
+                        div.slick-slide
+                            img(src="/images/run4.jpg")
+                            .block_text
+                                h2 Программа тренировок PRO
+                                p  ПЕРСОНАЛЬНАЯ ПРОГРАММА ТРЕНИРОВОК
+                                p ДЛЯ СБАЛАНСИРОВАННОГО РАЗВИТИЯ ВСЕХ ФИЗИЧЕСКИХ КАЧЕСТВ,
+                                p  КОТОРАЯ ОБЕСПЕЧИТ ГАРАНТИРОВАННЫЙ РЕЗУЛЬТАТ.
+
+                                p  (Индивидуальная работа с каждым учеником)
+                                a.link_page.button-caution(href="#program" id="") Подробнее
+                        div.slick-slide
+                            img(src="/images/run5.jpg")
+                            .block_text
+                                h2 Программа тренировок On-line
+                                p  Еженедельный анализ отчётов о выполненных заданиях
+                                p  при использовании спортивных часов с GPS и пульсомером
+                                a.link_page.button-caution(href="#program" id="") Подробнее
+                .container
+                    h4.top_mes Будь вы спортсменом-любителем или профессиональным атлетом, независимо от уровня подготовки, мы поможем вам достичь своей цели, а иногда не только достичь, но и поставить ее. Stamina — это не фитнес, здесь работают профессиональные тренеры нового поколения, успешно реализующие самые последние западные методики спортивной тренировки и богатый практический опыт отечественных школ на топ уровне.
+                    .section_top
+
+                        h2.top_text(id="about") Тренерский состав школы
+                        .section_top_block
+                            .block_trener
+                                .block_item_img
+                                    img(class="img_trener" src="/images/maksimoff.jpg")
+                                h3 Максимов Дмитрий
+                                h5  Мастер спорта международного класса
+                                p  Победитель кубка Европы 2005, экс-рекордсмен России в беге на 10 000 м (27:54,10)
+                                p Рекордсмен России среди юниоров в беге на 10 000 м (28:56,40)
+                                p 18-кратный победитель чемпионатов России
+                            .block_trener
+                                .block_item_img
+                                    img(class="img_trener" src="/images/mastrov.jpg")
+                                h3 Мастров Артем
+                                h5 Мастер спорта международного класса
+                                p  Участник Олимпийских игр в Сиднее 2000г. Многократный призер чемпионатов России.
+                                p  Рекордсмен Республики Татарстан в беге на 800м(1.46.04).
+                                p Тренер и преподаватель кафедры теории и методики циклических видов спорта Поволжской ГАФКСиТ.
+                    .section_program(id="program")
+                            h2.top_text Тренировочные программы
+                            .program_block
+                                .program_block_item.bas_block
+                                    h4 Бзовая
+
+
+                                    p Подготовка к выбранным стартам в общей группе.
+                                    p Подходит для начинающих и продолжающих заниматься бегом.
+                                    .program_item
+                                        ul
+                                            li
+                                                p 1) Количество занятий с тренером в месяц
+                                                    strong - 8
+
+                                            li
+                                                p 2) Составление тренировочного плана
+
+
+                                    .link_prog.button(id="my-popup") Начать
+                                .program_block_item.pro_block
+                                    h4  PRO
+                                    p 4 дополнительных занятия с тренером.
+                                    p Индивидуальная работа с учеником.
+                                    .program_item
+                                        ul
+                                            li
+                                                p 1) Количество занятий с тренером в месяц
+                                                    strong - 12
+                                            li
+                                                p 2) Составление тренировочного плана
+                                            li
+                                                p 3) Обратная связь тренер ученик
+                                            li
+                                                p 4) Рекомендации по питанию
+                                            li
+                                                p 5) Полное сопровождение
+                                                p 6) Функциональная диагностика
+
+
+
+
+
+                                    a.link_prog.button(id="my-popup") Начать
+                                .program_block_item.line_block
+                                    h4 On-line
+
+                                    p Подходит если вы много путеществуете или находитесь в другом городе.
+                                    p Включает занятия в группе.
+                                    p Индивидуальная работа с каждым учеником.
+                                    .program_item
+                                        ul
+                                            li
+                                                p 1) Составление тренировочного плана
+                                            li
+                                                p 2) Обратная связь тренер ученик
+                                            li
+                                                p 3) Рекомендации по питанию
+                                                p 4) Функциональная диагностика
+
+
+
+                                    .link_prog.button(id="my-popup") Начать
+                                .program_block_item.begin_block
+                                        h4 Начальная группа
+                                        p Подходит для детей от 7 лет.
+                                        .program_item
+                                            ul
+                                                li
+                                                    p 1) Хотите, чтобы Ваш ребенок вырос здоровым и имел разностороннее развитие
+                                                li
+                                                    p 2) Был сильным, выносливым и уверенным в себе
+                                                li
+                                                    p 3) Стань Будующим чемпионом вместе с нами
+
+
+
+                                        .link_prog.button(id="my-popup") Начать
+                            .program_text
+                                p.smal Для тренировок ON-LINE под нашим руководством вам потребуются спортивные часы с GPS и пульсомером, позволяющие выгружать тренировки. Мы рекомендуем продукцию таких компаний, как Garmin, Suunto и Polar.
+                                p.text_border Дополнительно мы гарантируем:
+                                p - Отсутствие лимита на общение с тренером
+                                p - Построение тренировочного плана для одних или нескольких соревнований в сезоне
+                                p - Гибкая перестройка плана в виду отказа от каких-то соревнований, отпусков, болезней
+                                p - Еженедельный анализ отчётов о выполненных заданиях
+                                p - Предотвращение состояния перетренированности, а так же спортивных травм
+                                p - Построение тренировочных планов на основании функциональной диагностики
+                    .section_blog
+                        h2.top_text Блог
+                        .blog_block
+                            .blog_item
+
+                                .blog_item_img
+                                    a(href="#" class=""): img(src="/images/run5.jpg" alt="Stamina.su")
+                                h4 Школа выносливости в костроме лучшая школа
+                                p Начнем тренироваться вместе? Каждый из нас мечтает быть стройным, красивым и подтянутым, верно? Время диктует…
+                                a(href="#" class="") Читать статью
+                            .blog_item
+                                .blog_item_img
+                                    img(src="/images/run5.jpg")
+                                p Начнем тренироваться вместе? Каждый из нас мечтает быть стройным, красивым и подтянутым, верно? Время диктует…
+                            .blog_item
+                                .blog_item_img
+                                    img(src="/images/run5.jpg")
+                                p Начнем тренироваться вместе? Каждый из нас мечтает быть стройным, красивым и подтянутым, верно? Время диктует…
+                            .blog_item
+                                .blog_item_img
+                                    img(src="/images/run5.jpg")
+                                p Начнем тренироваться вместе? Каждый из нас мечтает быть стройным, красивым и подтянутым, верно? Время диктует…
+                            p.blog_news Читать все статьи
+                    .section_rew
+                        h2.top_text Спортсмены школы выносливости
+                        .slider_nav
+                            .nav_item
+
+                                .img_block
+                                    img(src="/images/alina.jpg" alt="спортсмены школы бега в костроме")
+                                p Алина Смелова
+                            .nav_item
+
+                                .img_block
+                                    img(src="/images/dobr.jpg" alt="спортсмены школы выносливости")
+                                p Андрей Добрынин
+                            .nav_item
+
+                                .img_block
+                                    img(src="/images/boginov.jpg")
+                                p Максим Богинов
+                            .nav_item
+
+                                .img_block
+                                    img(src="/images/alina2.jpg" )
+                                p Алина Смелова
+                            .nav_item
+
+                                .img_block
+                                    img(src="/images/krutik.jpg" alt="спортсмены школы бега")
+                                p Сергей Крутиков
+                        .slider_for
+                            .for_item
+
+                                p Brussels half marathon - done! Обогнала себя прошлогоднюю на 20 (!) минут! Время на финише 1.45.37. Эмоции как в первый раз
+                            .for_item
+                                p Месяц подготовки on-line в Школе Выносливости (Кострома): 400км по набережной Адлера - пальмы, восходы и закаты, морской бриз и красивые люди. Марафон. Поддержка волонтеров и барабанного оркестра пробирает до слёз. Фрукты, вода, изотоники - каждые 5 км. Осенний желто-пальмовый Сочи радует, особенно когда город перекрыт специально для тебя. Глубокая медитация последнее 5 км сносит голову напрочь, а тело пищит от радости и глубины ощущений))) Сделано!Результат превзошел ожидания: 42 км за 3ч21мин на #СочиМарафон Первый рекорд и первый марафонец в Школе Выносливости, г. Кострома. Первый марафон для меня.
+                            .for_item
+                                p "На легке, первый круг нога за ногу, второй чуть быстрей, состояние на отлично и не помер совсем, бодренько. Пробег в кайф!!! Куча удовольствия!!! Хочу ещё!!! Школе респект, не думал что в кайф можно половинку бежать из 1:30. Подготовили!!!"
+                            .for_item
+                                p "Мои первые 42км 195м! Афинский классический марафон - один из самых сложных марафонов в мире, большая часть маршрута идет в гору, самые тяжелые подъемы с 20го по 30 километр. Это неслабый челлендж, больше 22 км я не бегала никогда, да и вообще вся подготовка заняла меньше 4 месяцев, 1,5 из которых бегать было совсем нельзя. Все получилось - 3.45. 24-это очень круто. Потрясающее событие по энергетике, так бы и рыдала всю трассу от счастья и причастности, но нельзя) Тренер @sgerasimoff спасибо!!, что не дал соскочить, когда казалось, что уже без вариантов, и за все!) "
+                            .for_item
+                                p "Пришел в школу в марте 2016 года для того чтобы подтянуть результаты в беге на 3 километра. Не знаю что произошло, но бег стал частью моей жизни, частью повседневной деятельности). Занятие в школе дают новый импульс к занятиям, к улучшению результатов + ценные советы тренера + общение с профессиональными спортсменами и всеми кому не безразличен бег. Думаю продолжать заниматься."
+
+
+                        .section_form
+                            h2.top_text(id="contact") Контакты
+                            .section_form_block
+                                .block_rewie.section_form_item
+
+
+                                    .phone_block
+
+                                        a.phone_link(href="tel:+7(4942)31-11-59")
+                                            i(class="fa fa-phone" aria-hidden="true")
+                                            |&nbsp;7(4942)31-11-59
+                                        a.phone_link(href="tel:+7(903)896-29-89")
+                                            i(class="fa fa-mobile" aria-hidden="true")
+                                            |&nbsp;7(903)896-29-89
+
+                                    .menu_top_block
+                                        a(href="http://stamina.su/kostroma").menu_link
+                                            i(class="fa fa-map-signs" aria-hidden="true")
+                                            |&nbsp;Кострома
+                                        a(href="http://stamina.su/kazan").menu_link
+                                            i(class="fa fa-map-signs" aria-hidden="true")
+                                            |&nbsp;Казань
+                                    .social_block
+                                        a(href="https://vk.com/stamina_su")
+                                            i(class="fa fa-vk fa-lg" aria-hidden="true")
+                                        a(href="https://www.facebook.com/stamina.su/")
+                                            i(class="fa fa-facebook-official fa-lg" aria-hidden="true")
+
+                                        a(href="#")
+                                            i(class="fa fa-instagram fa-lg" aria-hidden="true")
+
+                                .form_wrapper.section_form_item
+                                    label( class="form_popup")
+                                        .form__header_text  Форма для связи
+                                        form( action="action3.php" method="post" enctype="multipart/form-data" role="form" class="form_3")
+                                            #serv-msg3( class="server-mes  error")
+                                            .block_form
+                                                input( name="name" type="text" rows="350px" placeholder="Ваше имя" qtip-position="top" qtip-content="Введите имя" class="form__input")
+                                                input( name="message" type="text" rows="350px" placeholder="Ваш Email" qtip-position="top" qtip-content="Введите почту" class="form__input")
+                                                textarea( name="message" type="text" rows="5" placeholder="Введите текст сообщения" qtip-position="top" qtip-content="Введите текст сообщения" class="form__input")
+                                                input( type="submit" value="Отправить" class="form__submit ")
+        .section_footer
+                            .logo_block
+                                a(href="#" class="logo"): img(src="images/logo_st.png" alt="Stamina.su")
+
+                            .copyright_block
+                                p Copyright 2015-2017
+
+        div(id="")
+            label( class="form_popup_footer" id="element_to_pop_up")
+                    form( action="action2.php" method="post" enctype="multipart/form-data" role="form" class="form_1")
+                        a(href="" class="close-form b-close pull-right")
+                            span(class="glyphicon glyphicon-remove")
+                        .form__header_text Заполните форму
+                        #serv-msg3( class="server-mes  error")
+                        input( name="name" type="text" rows="350px" placeholder="Ваше имя" qtip-position="top" qtip-content="Введите имя" class="form__input")
+                        input( name="message" type="text" rows="350px" placeholder="Ваш телефон" qtip-position="top" qtip-content="Введите телефон" class="form__input")
+                        input( name="message" type="text" rows="350px" placeholder="Программа" qtip-position="top" qtip-content="Введите программу?" class="form__input")
+                        input( type="submit" value="Отправить" class="form__submit button")
+
+
+        //build:js js/vendor.js
+        script(src="/js/jquery.min.js")
+        script(src="/bower/bPopup/jquery.bpopup.min.js")
+        script(src="/bower/qtip2/jquery.qtip.min.js")
+        script(src="/js/slick.min.js")
+        //endbuild
+        //build:js js/main.js
+        script(src="/js/send.js")
+        script(src="/js/validation.js")
+        script(src="/js/main.js")
+        //endbuild
